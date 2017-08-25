@@ -1,0 +1,23 @@
+<h1>Quiz Duell For Politicians</h1>
+<p>You'll be surprised what you find here [placeholder text]</p>
+
+<%= javascript_tag "var answers = {};" %>
+
+<div class="container">
+  <div class="row">
+    <div class="questions">
+      <% @questions.each do |question| %>
+      <div>
+      <h1 class="question"><%= question.text %></h1>
+      <% shuffled = question.answers %>
+      <% shuffled.each do |answer| %>
+      <h3 class="answer" data-question=<%= question.id %>><%= answer.text %></h3>
+      <% end %>
+      <%= javascript_tag "answers['#{question.id}'] = #{shuffled.to_json.html_safe};" %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
