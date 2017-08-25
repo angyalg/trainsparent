@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
 politicans_attributes = [
               { name: 'Angela Merkel', party:"CDU" },
               { name: 'Martin Schulz', party:"SPD" },
@@ -20,3 +21,14 @@ politicans_attributes = [
 politicans_attributes.each do |p|
   Politician.create!(p)
 end
+
+one = Question.create!(text: "Who called Hillary Clinton a nasty woman?")
+
+one.answers = [Answer.new(text: "Donald Trump", correct: true), Answer.new(text: "Ted Cruz"), Answer.new(text: "Bill Clinton"), Answer.new(text: "George Bush")]
+one.save!
+
+two = Question.create!(text: "Who called Hillary Clinton a nasty woman?")
+
+two.answers = [Answer.new(text: "Donald Trump", correct: true), Answer.new(text: "Ted Cruz"), Answer.new(text: "Bill Clinton"), Answer.new(text: "George Bush")]
+two.save!
+
