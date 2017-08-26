@@ -23,21 +23,23 @@ politicans_attributes.each do |p|
 end
 
 one = Question.create!(text: "Who called Hillary Clinton a nasty woman?")
-
 one.answers = [Answer.new(text: "Donald Trump", correct: true), Answer.new(text: "Ted Cruz"), Answer.new(text: "Bill Clinton"), Answer.new(text: "George Bush")]
 one.save!
 
 two = Question.create!(text: "Who called Hillary Clinton a nasty woman?")
-
 two.answers = [Answer.new(text: "Donald Trump", correct: true), Answer.new(text: "Ted Cruz"), Answer.new(text: "Bill Clinton"), Answer.new(text: "George Bush")]
 two.save!
 
 one = Question.create(text: "Die Leute finden ihn als Fußballspieler gut. Aber sie wollen einen Boateng nicht als Nachbarn haben.
 ")
-one.answers = Answer.create([{text: "Alexander Gauland, AFD", correct: true}, {text: "Horst Seehofer, CSU"}, {text: "Frank Walter Steinmeier, SPD"}, {text: "Cem Özdemir, Die Grünen"}])
+one.answers = [Answer.create(text: "Alexander Gauland, AFD", correct: true), Answer.new(text: "Horst Seehofer, CSU"), Answer.new(text: "Frank Walter Steinmeier, SPD"), Answer.new(text: "Cem Özdemir, Die Grünen")]
+one.save!
+
 two = Question.create(text: "Wir haben im Moment keinen Zustand von Recht und Ordnung. Es ist eine Herrschaft des Unrechts.
 ")
-two.answers = Answer.create([{text: "Horst Seehofer, CSU", correct: true}, {text: "Frank Walter Steinmeier, SPD"}, {text: "Frauke Petry, AFD"}, {text: "Andrea Nahles, SPD"}])
+two.answers = [Answer.create(text: "Horst Seehofer, CSU", correct: true), (text: "Frank Walter Steinmeier, SPD"}, {text: "Frauke Petry, AFD"}, {text: "Andrea Nahles, SPD"}])
+two.save!
+
 three = Question.create(text: "Wir Deutschen, also unser Volk, sind das einzige Volk der Welt, das sich ein Denkmal der Schande in das Herz seiner Hauptstadt gepflanzt hat.
 ")
 three.answers = Answer.create([{text: "Björn Höcke, AFD", correct: true}, {text: "Sahra Wagenknecht, Die Linke"}, {text: "Horst Seehofer, CSU"}, {text: "Frank Walter Steinmeier, SPD"}])

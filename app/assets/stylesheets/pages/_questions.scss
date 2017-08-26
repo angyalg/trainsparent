@@ -1,3 +1,7 @@
+body {
+  background-image: url('http://res.cloudinary.com/ilidnew/image/upload/v1503736574/501906120_jqtgw0.jpg');
+}
+
 .main-wrapper {
   text-align: center;
 }
@@ -20,6 +24,13 @@
   background-color: white;
 }
 
+
+.quiz-btn {
+  min-width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
 .challenges-new {
   overflow: hidden;
 
@@ -40,7 +51,6 @@
 
 .questions-container {
   color: gray;
-  background-image: url('http://res.cloudinary.com/ilidnew/image/upload/v1503736574/501906120_jqtgw0.jpg');
 }
 
 .question-container {
