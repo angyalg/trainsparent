@@ -1,3 +1,7 @@
+body {
+  background-image: url('http://res.cloudinary.com/ilidnew/image/upload/v1503736574/501906120_jqtgw0.jpg');
+}
+
 .main-wrapper {
   text-align: center;
 }
@@ -20,13 +24,20 @@
   background-color: white;
 }
 
-.challenges-new {
-  overflow: hidden;
-
+.card-question {
+  width: 400px;
+  height: 450px;
+  padding: 20px;
+  background-color: white;
+  h1 {
+    font-size: 20px;
+  }
 }
 
-.new_hedgie_input {
-  color: red !important;
+.quiz-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .form-control {
@@ -38,9 +49,12 @@
   color: #F4F4F4;
 }
 
+.card-warpper {
+  height: 100vw;
+}
+
 .questions-container {
   color: gray;
-  background-image: url('http://res.cloudinary.com/ilidnew/image/upload/v1503736574/501906120_jqtgw0.jpg');
 }
 
 .question-container {
@@ -67,18 +81,10 @@
   }
 }
 
-.question-input-container {
-  input {
-    height: auto;
-    padding: 15px;
-    margin-top: 25px;
-    max-width: 250px;
-  }
-}
-
 .question-next-button {
   a {
     color: gray;
+    width: 200px;
     background: rgba(255, 255, 255, 0.24);
     border: 2px solid gray;
     padding: 10px 20px;
