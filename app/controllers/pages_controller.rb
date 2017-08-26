@@ -3,13 +3,13 @@ class PagesController < ApplicationController
   end
 
   def memory
-    @politicans = Politician.all
+    @politicans = Politician.all.sample(8)
     @politicans = @politicans.shuffle
 
     @cards = []
     @politicans.each do |p|
-      @cards << [p.photo_url, p.name]
-      @cards << [p.photo_url, p.party]
+      @cards << [p.picture, p.name, p.party]
+      @cards << [p.picture, p.profession]
     end
     @cards.shuffle!
   end
