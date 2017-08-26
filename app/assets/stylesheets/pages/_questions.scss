@@ -39,17 +39,13 @@
 }
 
 .questions-container {
-  background: rgba(0, 189, 112, 0.8);
   color: gray;
+  background-image: url('http://res.cloudinary.com/ilidnew/image/upload/v1503736574/501906120_jqtgw0.jpg');
 }
 
 .question-container {
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #e5e5e5;
-  }
 }
 
 .question-content {

@@ -1,6 +1,6 @@
 <%= javascript_tag "var answers = {};" %>
 
-<div class="questions-container" style="background-image: url('http://res.cloudinary.com/ilidnew/image/upload/v1503736574/501906120_jqtgw0.jpg')">
+<div class="questions-container">
   <div class="row">
   <% @id_number = 0 %>
     <div class="col-xs-12 col-sm-6 col-sm-offset-3 main-wrapper">
@@ -14,7 +14,7 @@
       </div>
     </div>
       <% @questions.each do |question| %>
-      <div class="question-container" id='<%= @id_number %>' data-next='#<%= @id_number +=1 %>'>
+      <div class="col-xs-12 col-sm-6 card" id='<%= @id_number %>' data-next='#<%= @id_number +=1 %>'>
         <h1 class="question"><%= question.text %></h1>
         <% shuffled = question.answers %>
         <% shuffled.each do |answer| %>
