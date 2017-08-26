@@ -1,1 +1,66 @@
 // Specific CSS for your home-page
+.home-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-card {
+  justify-content: center;
+  align-items: center;
+  h1 {
+    width: auto;
+    background-color: white;
+  }
+}
+
+.circle {
+  width: 100px;
+}
+
+@media (max-width: 500px) {
+  .circle {
+    height: 50px;
+  }
+  .home-btn {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-btn {
+  background-color: white;
+  border: 3px solid gainsboro;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space_around;
+  align-items: center;
+  padding: 20px;
+  shadow: 10px 4px gray;
+  margin: 20px;
+  p {
+    color: gray;
+  }
+}
+
+.box > a:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.background {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
