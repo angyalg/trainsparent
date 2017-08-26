@@ -1,10 +1,14 @@
 $(document).ready(function() {
   $('.answer').click(function() {
-    var correctAnswer = answers[$(this).data('question')][$(this).index() - 1]["correct"];
-    if (correctAnswer) {
-      $(this).css("color", "green" );
+    if ($(this).data('correct')) {
+      $(this).removeClass('btn-primary');
+      $(this).addClass('btn-success');
+      var submitButton = $($(this).parent().parent().find(".question-next-button")[0]);
+      submitButton.removeClass('disabled');
+      submitButton.addClass('enabled');
     } else {
-      $(this).css("color", "red" );
+      $(this).removeClass('btn-primary');
+      $(this).addClass('btn-danger');
     }
   })
 })
