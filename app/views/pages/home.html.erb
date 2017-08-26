@@ -1,10 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-md-4 col-md-offset-4 page-content">
+    <div class="page-box">
 
+        <div class="page-text">
+          <h1>Blue Pill or Red Pill?</h1>
+          <br>
+          <h2>Make a Choice</h2>
+        </div>
 
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+        <br>
 
-<%= link_to 'Go to Memory page', memory_path  %>
+        <div class="page-buttons">
 
-<br>
+          <%= link_to 'Go to Memory page', memory_path, class: "btn btn-primary button"%>
 
-<%= link_to 'Go to Questions page', questions_path  %>
+          <%= link_to 'Go to Questions page', questions_path,  class: "btn btn-danger button"%>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
