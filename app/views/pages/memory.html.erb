@@ -1,24 +1,32 @@
-<h1>Memory page</h1>
-
-<div class="container">
-  <% @cards.each_slice(4) do |card| %>
-    <div class="row">
-      <% card.each do |card| %>
-        <div class="col-xs-6 col-sm-3"><%= card[0] %><%= card[1] %></div>
-      <% end %>
-    </div>
-  <% end %>
-</div>
-
-<!--
- <div class="container">
+<!-- <div class="container">
   <div class="row">
-    <%# @guess.each do |key, value| %>
-      <div class="col-xs-6 col-sm-3">
-        <%#= key %>
-        <%#= value[0] %>
+
+      <h1>Memory page</h1>
+
+      <% @cards.each_slice(4) do |card| %>
+      <div class="row">
+        <% card.each do |card| %>
+          <div class="col-xs-6 col-sm-3">
+          <div class="card">
+            <%= image_tag (card[0]) %>
+            <p> <%= card[1] %></p>
+          </div>
+          </div>
+        <% end %>
       </div>
-    <#% end %>
+      <% end %>
+
+    </div>
   </div>
- </div>
- -->
+
+</div> -->
+
+<div class="wrap">
+  <div class="game"></div>
+    <div class="modal-overlay">
+    <div class="modal">
+      <h2 class="winner">You win!</h2>
+      <button class="restart">Play Again?</button>
+    </div>
+  </div>
+</div>

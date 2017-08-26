@@ -94,7 +94,7 @@ eight = Question.create(text: "Eine gerechte Gesellschaft heißt auch: Jeder dar
 eight.answers = [Answer.new(text: "Sahra Wagenknecht, Die Linke", correct: true), Answer.new(text: "Andrea Nahles, SPD"), Answer.new(text: "Cem Özdemir, Die Grünen"), Answer.new(text: "Björn Höcke, AFD")]
 eight.save!
 
-nine = Question.create(text: "Es kann nicht sein, dass in bestimmten Stadtteilen und bestimmte Familien Arbeit nicht zum festen Tagesablauf gehört.")
+nine = Question.create(text: "Es kann nicht sein, dass in bestimmten Stadtteilen und bestimmten Familien Arbeit nicht zum festen Tagesablauf gehört.")
 nine.answers = [Answer.new(text: "Andrea Nahles, SPD", correct: true), Answer.new(text: "Peter Tauber, CDU"), Answer.new(text: "Frauke Petry, AFD"), Answer.new(text: "Horst Seehofer, CSU")]
 nine.save!
 
