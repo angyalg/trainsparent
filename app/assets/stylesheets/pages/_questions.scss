@@ -1,0 +1,113 @@
+.main-wrapper {
+  text-align: center;
+}
+
+.heading {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1, p, .question-next-button {
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+.card {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+}
+
+.challenges-new {
+  overflow: hidden;
+
+}
+
+.new_hedgie_input {
+  color: red !important;
+}
+
+.form-control {
+  &:focus {
+    outline: 0;
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+  color: #F4F4F4;
+}
+
+.questions-container {
+  background: rgba(0, 189, 112, 0.8);
+  color: gray;
+}
+
+.question-container {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #e5e5e5;
+  }
+}
+
+.question-content {
+  font-size: 25px;
+  max-width: 400px;
+  padding: 150px 40px 150px 40px;
+  .no-highlight {
+    opacity: .6;
+  }
+}
+
+.summary {
+  .p_sum {
+    font-size: 25px;
+    opacity: 1;
+  }
+  .no-highlight {
+    opacity: .6;
+  }
+}
+
+.question-input-container {
+  input {
+    height: auto;
+    padding: 15px;
+    margin-top: 25px;
+    max-width: 250px;
+  }
+}
+
+.question-next-button {
+  a {
+    color: gray;
+    background: rgba(255, 255, 255, 0.24);
+    border: 2px solid gray;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 19px;
+    text-decoration: none;
+
+    &:hover {
+      transition: all 200ms ease;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.hedgie_submit {
+  border: none;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px;
+  color: $brand-success;
+  padding: 18px 15px;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.2);
+    transition: transform 200ms ease;
+  }
+}
