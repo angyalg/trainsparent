@@ -8,14 +8,14 @@
 
 
 politicans_attributes = [
-              { name: 'Angela Merkel', party:"CDU" },
-              { name: 'Martin Schulz', party:"SPD" },
-              { name: 'Sigmar Gabriel', party:"SPD" },
-              { name: 'Frank-Walter Steinmeier', party:"SPD" },
-              { name: 'Wolfgang Schäuble', party:"CDU" },
-              { name: 'Helmut Kohl', party:"CDU" },
-              { name: 'Willy Brandt', party:"SPD" },
-              { name: 'Horst Seehofer', party:"CSU" },
+              { name: 'Angela Merkel', party:"CDU", photo_url:"a" },
+              { name: 'Martin Schulz', party:"SPD", photo_url:"b" },
+              { name: 'Sigmar Gabriel', party:"SPD", photo_url:"c" },
+              { name: 'Frank-Walter Steinmeier', party:"SPD", photo_url:"d" },
+              { name: 'Wolfgang Schäuble', party:"CDU", photo_url:"e" },
+              { name: 'Helmut Kohl', party:"CDU", photo_url:"f" },
+              { name: 'Willy Brandt', party:"SPD", photo_url:"g" },
+              { name: 'Horst Seehofer', party:"CSU", photo_url:"h" },
               ]
 
 politicans_attributes.each do |p|

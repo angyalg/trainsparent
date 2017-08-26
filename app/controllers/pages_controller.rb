@@ -3,14 +3,11 @@ class PagesController < ApplicationController
   end
 
   def memory
-    @politicans = Politician.all
-
-    @cards = []
-    @politicans.each do |p|
-      @cards << p.name
-      @cards << p.party
+    @guess = {}
+    politicians = Politician.all.sample(8)
+    politicians.each do |p|
+      @guess[p.photo_url] = [p.name, p.party]
     end
-
-    @cards.shuffle!
+    @guess
   end
 end
