@@ -2,32 +2,37 @@
 
 <div class="questions-container">
   <div class="row">
-  <% @id_number = 0 %>
+    <% @id_number = 0 %>
     <div class="col-xs-12 col-sm-6 col-sm-offset-3 main-wrapper">
       <div class="heading" id='<%= @id_number +=1 %>' data-next='#<%= @id_number +=1 %>'>
-      <div class="col-xs-12 col-sm-6 card">
-        <h1>Quiz Duell For Politicians</h1>
-        <p>You'll be surprised what you find here [placeholder text]</p>
-        <div class='question-next-button'>
-        <a href='#<%= @id_number %>'>GET STARTED</a>
-        </div>
+        <div class="col-xs-12 col-sm-6 card">
+          <h1>Quiz Duell For Politicians</h1>
+          <p>You'll be surprised what you find here [placeholder text]</p>
+          <div class='question-next-button'>
+            <a href='#<%= @id_number %>'>GET STARTED</a>
+          </div>
         </div>
       </div>
+
+      <div class="card-wrapper">
       <% @questions.each do |question| %>
       <div class="heading" id='<%= @id_number %>' data-next='#<%= @id_number +=1 %>'>
-        <div class="col-xs-12 col-sm-6 card">
-        <h1 class="question"><%= question.text %></h1>
-        <% shuffled = question.answers %>
-        <% shuffled.each do |answer| %>
-        <button class="btn btn-secondary quiz-btn answer" data-question=<%= question.id %>><%= answer.text %></button>
-        <% end %>
-        <div class='question-next-button'>
-          <a href='#<%= @id_number %>'>NEXT</a>
-        </div>
-        <%= javascript_tag "answers['#{question.id}'] = #{shuffled.to_json.html_safe};" %>
-        <% end %>
+        <div class="col-xs-12 col-sm-6 card-question">
+          <h1 class="question"><%= question.text %></h1>
+          <% shuffled = question.answers %>
+          <% shuffled.each do |answer| %>
+          <div class="col-xs-10 col-xs-offset-1">
+              <button class="btn btn-secondary quiz-btn answer" data-question=<%= question.id %>><%= answer.text %></button>
+          </div>
+          <% end %>
+          <div class='question-next-button'>
+            <a href='#<%= @id_number %>'>NEXT</a>
+          </div>
+          <%= javascript_tag "answers['#{question.id}'] = #{shuffled.to_json.html_safe};" %>
+          <% end %>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </div>
