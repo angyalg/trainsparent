@@ -8,11 +8,9 @@ class PagesController < ApplicationController
 
     @cards = []
     @politicans.each do |p|
-      @cards << p.name
-      @cards << p.party
+      @cards << [p.photo_url, p.name]
+      @cards << [p.photo_url, p.party]
     end
-    @cards = @cards[0..15]
-
     @cards.shuffle!
   end
 end
