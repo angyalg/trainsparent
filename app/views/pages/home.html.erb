@@ -1,17 +1,20 @@
 
-<div class="background">
-  <div class="col-xs-12">
-    <div class="row">
+<div class="home-container">
+  <div class="big-card">
+  <h1>Let's test your German Political knowledge</h1>
+    <div class="box">
+      <a href="<%= questions_path %>">
       <div class="home-btn">
         <%= cl_image_tag("noun_36444_cc_icsjfq.svg", class: "circle") %>
-        <%= link_to 'Quizzz Game', questions_path  %>
+        <p>Quizzz</p>
       </div>
-    </div>
-    <div class="row">
+      </a>
+      <a href="<%= memory_path %>">
       <div class="home-btn">
         <%= cl_image_tag("noun_1003859_cc_1_1_qgicxj.svg", class: "circle") %>
-        <%= link_to "Memoriezzz", memory_path %>
+        <p>Memoriezzz</p>
       </div>
+      </a>
     </div>
   </div>
 </div>
