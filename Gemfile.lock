@@ -47,7 +47,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.3)
-    byebug (9.0.6)
+    byebug (9.1.0)
     cloudinary (1.8.1)
       aws_cf_signer
       rest-client
@@ -100,8 +100,8 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pry-byebug (3.4.3)
-      byebug (>= 9.0, < 9.1)
+    pry-byebug (3.5.0)
+      byebug (~> 9.1)
       pry (~> 0.10)
     pry-rails (0.3.6)
       pry (>= 0.10.4)
