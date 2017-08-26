@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   end
 
   def memory
-    @politicans = Politician.all.sample(8)
+    @politicans = Politician.all.sample(6)
     @politicans = @politicans.shuffle
 
     @cards = []

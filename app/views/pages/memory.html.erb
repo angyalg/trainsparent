@@ -1,19 +1,17 @@
 <div class="container">
   <div class="row">
 
-      <h1>Memory page</h1>
-
       <% @cards.each_slice(4) do |card| %>
-      <div class="row">
+      <!-- <div class="row"> -->
         <% card.each do |card| %>
-          <div class="col-xs-6 col-sm-3">
-          <div class="card">
+          <div class="col-xs-4 col-sm-3 card-wrapper">
+          <div class="memory-card">
             <%= image_tag (card[0]) %>
             <p> <%= card[1] %></p>
           </div>
           </div>
         <% end %>
-      </div>
+      <!-- </div> -->
       <% end %>
 
     </div>
