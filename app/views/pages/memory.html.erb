@@ -1,54 +1,30 @@
-<div class="container">
+<!-- <div class="container">
   <div class="row">
 
       <h1>Memory page</h1>
 
-      <% @cards.each_slice(4) do |card| %>
+      <%# @cards.each_slice(4) do |card| %>
       <div class="row">
-        <% card.each do |card| %>
+        <%# card.each do |card| %>
           <div class="col-xs-6 col-sm-3">
           <div class="card">
-            <%= image_tag (card[0]) %>
-            <p> <%= card[1] %> <%= card[2] %> </p>
+            <%#= image_tag (card[0]) %>
+            <p> <%#= card[1] %> <%= card[2] %> </p>
           </div>
           </div>
-        <% end %>
+        <%# end %>
       </div>
-      <% end %>
+      <%# end %>
 
     </div>
-
-
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  See your results!</button>
-
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <div class="modal-title" id="myModalLabel"><%= image_tag @cards[0][0], class: "avatar" %></div>
-      </div>
-      <div class="modal-body">
-        <div class="card">
-
-            <p> <%= @cards.first[1] %> <%= @cards.first[2] %> </p>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!--
- <div class="container">
-  <div class="row">
-    <%# @guess.each do |key, value| %>
-      <div class="col-xs-6 col-sm-3">
-        <%#= key %>
-        <%#= value[0] %>
-      </div>
-    <#% end %>
-  </div>
- </div>
  -->
+
+<div class="wrap">
+  <div class="game"></div>
+    <div class="modal-overlay">
+    <div class="modal">
+      <h2 class="winner">You win!</h2>
+      <button class="restart">Play Again?</button>
+    </div>
+  </div>
+</div>
