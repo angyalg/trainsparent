@@ -17,11 +17,18 @@ body {
   }
 }
 
+
 .quiz-card {
-  width: 400px;
-  height: 300px;
-  padding: 20px;
-  background-color: white;
+
+ .disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+width: 400px;
+height: 300px;
+padding: 20px;
+background-color: white;
 }
 
 .card-question {
@@ -31,6 +38,7 @@ body {
   background-color: white;
   h1 {
     font-size: 20px;
+    padding: 0px 20px;
   }
 }
 
@@ -83,6 +91,7 @@ body {
 
 .question-next-button {
   a {
+    margin-top: 20px;
     color: gray;
     width: 200px;
     background: rgba(255, 255, 255, 0.24);
