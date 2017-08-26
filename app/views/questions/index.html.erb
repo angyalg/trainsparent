@@ -1,5 +1,3 @@
-<%= javascript_tag "var answers = {};" %>
-
 <div class="questions-container">
   <div class="row">
     <% @id_number = 0 %>
@@ -22,13 +20,12 @@
           <% shuffled = question.answers %>
           <% shuffled.each do |answer| %>
           <div class="col-xs-10 col-xs-offset-1">
-              <button class="btn btn-secondary quiz-btn answer" data-question=<%= question.id %>><%= answer.text %></button>
+              <button class="btn btn-secondary quiz-btn answer" data-correct=<%= answer.correct%>> <%= answer.text %></button>
           </div>
           <% end %>
-          <div class='question-next-button'>
+          <div class='question-next-button disabled'>
             <a href='#<%= @id_number %>'>NEXT</a>
           </div>
-          <%= javascript_tag "answers['#{question.id}'] = #{shuffled.to_json.html_safe};" %>
           <% end %>
         </div>
       </div>
