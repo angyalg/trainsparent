@@ -1,1 +1,29 @@
-// Specific CSS for your home-page
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.page-box {
+  border: solid $light-gray;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.9);
+}
+.page-text {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.page-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 25px;
+  margin: 15px;
+}
