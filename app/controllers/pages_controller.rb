@@ -4,6 +4,7 @@ class PagesController < ApplicationController
 
   def memory
     @politicans = Politician.all
+    @politicans = @politicans.shuffle
 
     @cards = []
     @politicans.each do |p|
