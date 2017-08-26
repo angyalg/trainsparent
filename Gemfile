@@ -7,6 +7,7 @@ gem 'pg'
 gem 'puma'
 gem 'rails', '5.1.3'
 gem 'redis'
+gem 'cloudinary'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
@@ -15,6 +16,7 @@ gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
+gem "haml"
 
 group :development, :test do
   gem 'pry-byebug'
