@@ -2,9 +2,11 @@ $(document).ready(function() {
   $('.answer').click(function() {
     var correctAnswer = answers[$(this).data('question')][$(this).index() - 1]["correct"];
     if (correctAnswer) {
-      $(this).css("color", "green" );
+      $(this).removeClass('btn-primary');
+      $(this).addClass('btn-success');
     } else {
-      $(this).css("color", "red" );
+      $(this).removeClass('btn-primary');
+      $(this).addClass('btn-danger');
     }
   })
 })
