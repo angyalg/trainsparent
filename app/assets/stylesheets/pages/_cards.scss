@@ -1,9 +1,16 @@
+
 .card-wrapper{
   padding: 2px;
 }
 .memory-card {
   height: 130px;
   text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+
+
+.front {
+  height: 250px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+
   background-size: cover !important;
   background-position: center;
   background-color: white;
@@ -27,10 +34,30 @@
     width: 90%;
     object-fit:cover;
 
+
   }
 }
 // *{
 //   border: 1px solid red;
+
+// .quiz-card {
+//   height: 250px;
+//   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+//   background-size: cover !important;
+//   background-position: center;
+//   color: white;
+//   position: relative;
+//   p {
+//     font-size: 15px;
+//   }
+//   img {
+//     height: 200px;
+//     width: 200px;
+//     object-fit:cover;
+
+
+//   }
+
 // }
 
 // .card-link {

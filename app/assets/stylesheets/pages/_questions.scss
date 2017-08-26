@@ -18,17 +18,21 @@ body {
 }
 
 
+
 .quiz-card {
 
  .disabled {
   pointer-events: none;
   cursor: default;
 }
+}
 
-width: 400px;
-height: 300px;
-padding: 20px;
-background-color: white;
+.card-heading {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+
 }
 
 .card-question {
